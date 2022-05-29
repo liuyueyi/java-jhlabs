@@ -13,6 +13,46 @@ the source code from [http://www.jhlabs.com/ip/filters/index.html](http://www.jh
 
 this repository just for build jar by jetpack
 
+## Adding jhlabs to your build
+
+jhlabs’s source group id is `com.jhlabs` and its artifact ID is `jhlabs-filters`, the min jdk version is `jdk1.5`
+
+the newest version is `1.0`, use it to replace version bellow
+
+To add a dependency on jhlabs using Maven by jitpack, use the following:
+
+```xml
+<repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+</repositories>
+
+<dependency>
+    <groupId>com.github.liuyueyi</groupId>
+    <artifactId>java-jhlabs</artifactId>
+    <!-- replace by newest version  -->
+    <version>1.0</version>
+</dependency>
+```
+
+gradle like this
+
+```gradle
+allprojects {
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+dependencies {
+        implementation 'com.github.liuyueyi:java-jhlabs:1.0'
+}
+```
+
+
 ## use case
 
 ### 1. image to sketch
