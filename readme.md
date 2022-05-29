@@ -12,6 +12,7 @@ this repository just for build jar by jetpack
 code: [Img2SketchTest](src/test/java/com/jhlabs/test/Img2SketchTest.java)
 output
 
-| input         | output       |
-|---------------|--------------|
-| <img src=":"> | <img src=""> | 
+| input                                               | output                                                                                          |
+|-----------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| <img src="src/test/resources/photo.jpg?raw=true">   | <img src="https://github.com/liuyueyi/java-jhlabs/blob/master/assets/img/photo.png?raw=true">   | 
+| <img src="src/test/resources/cartoon.jpg?raw=true"> | <img src="https://github.com/liuyueyi/java-jhlabs/blob/master/assets/img/cartoon.png?raw=true"> | 
